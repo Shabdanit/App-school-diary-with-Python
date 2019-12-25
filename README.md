@@ -5,3 +5,5 @@ easier
 You can write your tusks and scores in this app
 
 I hope you enjoy this and learnt something usefull
+
+Please inform me if you found mistakes I'll be grateful)
