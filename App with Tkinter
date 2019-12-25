@@ -1,6 +1,6 @@
 from tkinter import*
 
-
+#This functions is for button
 def DateOfMonday():
     print("Math: " + input_text.get() + " " + "scr: " + score1_text.get())
     print("EngLang: " + input1_text.get() + " " + "scr: " + score2_text.get())
