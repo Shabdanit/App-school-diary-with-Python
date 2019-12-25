@@ -1,31 +1,31 @@
 from tkinter import*
 
 
-def DataOfMonday():
+def DateOfMonday():
     print("Math: " + input_text.get() + " " + "scr: " + score1_text.get())
     print("EngLang: " + input1_text.get() + " " + "scr: " + score2_text.get())
     print("RusLang: " + input2_text.get() + " " + "scr: " + score3_text.get())
     print("Chemistry: " + input3_text.get() + " " + "scr: " + score4_text.get())
 
-def DataOfTuesday():
+def DateOfTuesday():
     print("Math: " + input5_text.get() + " " + "scr: " + score5_text.get())
     print("Physics: " + input6_text.get() + " " + "scr: " + score6_text.get())
     print("KyrgLang: " + input7_text.get() + " " + "scr: " + score7_text.get())
     print("History: " + input8_text.get() + " " + "scr: " + score8_text.get())
 
-def DataOfWensday():
+def DateOfWensday():
     print("СompScience: " + input9_text.get() + " " + "scr: " + score9_text.get())
     print("Physics: " + input10_text.get() + " " + "scr: " + score10_text.get())
     print("Geometry: " + input11_text.get() + " " + "scr: " + score11_text.get())
     print("CompGraphics: " + input12_text.get() + " " + "scr: " + score12_text.get())
 
-def DataOfThursday():
+def DateOfThursday():
     print("Drawing: " + input13_text.get() + " " + "scr: " + score13_text.get())
     print("Physics: " + input14_text.get() + " " + "scr: " + score14_text.get())
     print("EngLang: " + input15_text.get() + " " + "scr: " + score15_text.get())
     print("Chemistry: " + input16_text.get() + " " + "scr: " + score16_text.get())
 
-def DataOfFriday():
+def DateOfFriday():
     print("Drawing: " + input17_text.get() + " " + "scr: " + score17_text.get())
     print("Physics: " + input18_text.get() + " " + "scr: " + score18_text.get())
     print("EngLang: " + input19_text.get() + " " + "scr: " + score19_text.get())
@@ -120,7 +120,7 @@ score4 = Entry(lol,textvariable = score4_text,width = 5,justify = "left").grid(r
 
 
 #Button
-btn = Button(lol, width = 5,text = "result",command = DataOfMonday).grid(row = 5, column = 3)
+btn = Button(lol, width = 5,text = "result",command = DateOfMonday).grid(row = 5, column = 3)
 
 #SubjectsForTuesday
 
@@ -154,7 +154,7 @@ score8 = Entry(lol,textvariable = score8_text,width = 5,justify = "left").grid(r
 
 
 #Button
-btn = Button(lol, width = 5,text = "result",command = DataOfTuesday).grid(row = 11, column = 3)
+btn = Button(lol, width = 5,text = "result",command = DateOfTuesday).grid(row = 11, column = 3)
 
 #SubjectsForWensday
 
@@ -188,7 +188,7 @@ score12 = Entry(lol,textvariable = score12_text,width = 5,justify = "left").grid
 
 
 #Button
-btn = Button(lol, width = 5,text = "result",command = DataOfWensday).grid(row = 17, column = 3)
+btn = Button(lol, width = 5,text = "result",command = DateOfWensday).grid(row = 17, column = 3)
 
 #SubjectsForThursday
 
@@ -222,7 +222,7 @@ score8 = Entry(lol,textvariable = score8_text,width = 5,justify = "left").grid(r
 
 
 #Button
-btn = Button(lol, width = 5,text = "result",command = DataOfTuesday).grid(row = 11, column = 3)
+btn = Button(lol, width = 5,text = "result",command = DateOfTuesday).grid(row = 11, column = 3)
 
 #SubjectsForThursday
 
@@ -259,7 +259,7 @@ score3 = Entry(lol,textvariable = score15_text,width = 5,justify = "left").grid(
 score4 = Entry(lol,textvariable = score16_text,width = 5,justify = "left").grid(row = 4, column = 10)
 
 #Button
-btn = Button(lol, width = 5,text = "result",command = DataOfThursday).grid(row = 5, column = 16)
+btn = Button(lol, width = 5,text = "result",command = DateOfThursday).grid(row = 5, column = 16)
 
 #SubjectsForFriday
 li1 = Label(lol, text='Math',font = ('arial'), bd = 10).grid(row=6, column = 8)
@@ -290,7 +290,7 @@ score4 = Entry(lol,textvariable = score20_text,width = 5,justify = "left").grid(
 
 
 #Button
-btn = Button(lol, width = 5,text = "result",command = DataOfFriday).grid(row = 10, column = 16)
+btn = Button(lol, width = 5,text = "result",command = DateOfFriday).grid(row = 10, column = 16)
 
 lol.mainloop()
 
