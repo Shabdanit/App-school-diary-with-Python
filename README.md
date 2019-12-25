@@ -1,2 +1,7 @@
-# App-school-diary-with-Python
-For creating this app We use Python's library Tkinter
+What can this App do?
+
+So, firstly it is basic school diary which can make teacher's and student's daily things
+easier
+You can write your tusks and scores in this app
+
+I hope you enjoy this and learnt something usefull
