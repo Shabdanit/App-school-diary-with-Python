@@ -1,0 +1,296 @@
+from tkinter import*
+
+
+def DataOfMonday():
+    print("Math: " + input_text.get() + " " + "scr: " + score1_text.get())
+    print("EngLang: " + input1_text.get() + " " + "scr: " + score2_text.get())
+    print("RusLang: " + input2_text.get() + " " + "scr: " + score3_text.get())
+    print("Chemistry: " + input3_text.get() + " " + "scr: " + score4_text.get())
+
+def DataOfTuesday():
+    print("Math: " + input5_text.get() + " " + "scr: " + score5_text.get())
+    print("Physics: " + input6_text.get() + " " + "scr: " + score6_text.get())
+    print("KyrgLang: " + input7_text.get() + " " + "scr: " + score7_text.get())
+    print("History: " + input8_text.get() + " " + "scr: " + score8_text.get())
+
+def DataOfWensday():
+    print("СompScience: " + input9_text.get() + " " + "scr: " + score9_text.get())
+    print("Physics: " + input10_text.get() + " " + "scr: " + score10_text.get())
+    print("Geometry: " + input11_text.get() + " " + "scr: " + score11_text.get())
+    print("CompGraphics: " + input12_text.get() + " " + "scr: " + score12_text.get())
+
+def DataOfThursday():
+    print("Drawing: " + input13_text.get() + " " + "scr: " + score13_text.get())
+    print("Physics: " + input14_text.get() + " " + "scr: " + score14_text.get())
+    print("EngLang: " + input15_text.get() + " " + "scr: " + score15_text.get())
+    print("Chemistry: " + input16_text.get() + " " + "scr: " + score16_text.get())
+
+def DataOfFriday():
+    print("Drawing: " + input17_text.get() + " " + "scr: " + score17_text.get())
+    print("Physics: " + input18_text.get() + " " + "scr: " + score18_text.get())
+    print("EngLang: " + input19_text.get() + " " + "scr: " + score19_text.get())
+    print("Physics: " + input20_text.get() + " " + "scr: " + score20_text.get())
+
+
+lol = Tk()
+
+
+
+lol.configure()
+
+lol.title("Timetable")
+#input text for timetable
+input_text = StringVar()
+input1_text = StringVar()
+input2_text = StringVar()
+input3_text = StringVar()
+score1_text = StringVar()
+score2_text = StringVar()
+score3_text = StringVar()
+score4_text = StringVar()
+#Tuesday
+input5_text = StringVar()
+input6_text = StringVar()
+input7_text = StringVar()
+input8_text = StringVar()
+score5_text = StringVar()
+score6_text = StringVar()
+score7_text = StringVar()
+score8_text = StringVar()
+#Wensday
+input9_text = StringVar()
+input10_text = StringVar()
+input11_text = StringVar()
+input12_text = StringVar()
+score9_text = StringVar()
+score10_text = StringVar()
+score11_text = StringVar()
+score12_text = StringVar()
+#Thursday
+input13_text = StringVar()
+input14_text = StringVar()
+input15_text = StringVar()
+input16_text = StringVar()
+score13_text = StringVar()
+score14_text = StringVar()
+score15_text = StringVar()
+score16_text = StringVar()
+#Thursday
+input17_text = StringVar()
+input18_text = StringVar()
+input19_text = StringVar()
+input20_text = StringVar()
+score17_text = StringVar()
+score18_text = StringVar()
+score19_text = StringVar()
+score20_text = StringVar()
+
+#label
+subject = Label(lol, text='Subject',font = ('arial 14'), bd = 10).grid(row=0)
+
+tasks = Label(lol, text='Task',font = ('arial 14'), bd = 10).grid(row=0, column = 1)
+
+scores = Label(lol, text='score',font = ('arial 14'), bd = 10).grid(row=0, column = 2)
+
+li1 = Label(lol, text='Math',font = ('arial'), bd = 10).grid(row=1)
+
+li2 = Label(lol, text='EngLang',font = ('arial'), bd = 10).grid(row=2)
+
+li3 = Label(lol, text='RusLang',font = ('arial'), bd = 10).grid(row=3)
+
+li4 = Label(lol, text='Chemistry',font = ('arial'), bd = 10).grid(row=4)
+#Entry
+el = Entry(lol,textvariable = input_text).grid(row = 1, column = 1)
+
+e2 = Entry(lol,textvariable = input1_text).grid(row = 2, column = 1)
+
+e3 = Entry(lol,textvariable = input2_text).grid(row = 3, column = 1)
+
+e4 = Entry(lol,textvariable = input3_text).grid(row = 4, column = 1)
+
+#scores
+score1 = Entry(lol,textvariable = score1_text,width = 5,justify = "left").grid(row = 1, column = 2)
+
+score2 = Entry(lol,textvariable = score2_text,width = 5,justify = "left").grid(row = 2, column = 2)
+
+score3 = Entry(lol,textvariable = score3_text,width = 5,justify = "left").grid(row = 3, column = 2)
+
+score4 = Entry(lol,textvariable = score4_text,width = 5,justify = "left").grid(row = 4, column = 2)
+
+
+
+#Button
+btn = Button(lol, width = 5,text = "result",command = DataOfMonday).grid(row = 5, column = 3)
+
+#SubjectsForTuesday
+
+#label
+
+li5 = Label(lol, text='Math',font = ('arial'), bd = 10).grid(row=7)
+
+li6 = Label(lol, text='Physics',font = ('arial'), bd = 10).grid(row=8)
+
+li7 = Label(lol, text='KyrgLang',font = ('arial'), bd = 10).grid(row=9)
+
+li8 = Label(lol, text='History',font = ('arial'), bd = 10).grid(row=10)
+#Entry
+e5 = Entry(lol,textvariable = input5_text).grid(row = 7, column = 1)
+
+e6 = Entry(lol,textvariable = input6_text).grid(row = 8, column = 1)
+
+e7 = Entry(lol,textvariable = input7_text).grid(row = 9, column = 1)
+
+e8 = Entry(lol,textvariable = input8_text).grid(row = 10, column = 1)
+
+#scores
+score5 = Entry(lol,textvariable = score5_text,width = 5,justify = "left").grid(row = 7, column = 2)
+
+score6 = Entry(lol,textvariable = score6_text,width = 5,justify = "left").grid(row = 8, column = 2)
+
+score7 = Entry(lol,textvariable = score7_text,width = 5,justify = "left").grid(row = 9, column = 2)
+
+score8 = Entry(lol,textvariable = score8_text,width = 5,justify = "left").grid(row = 10, column = 2)
+
+
+
+#Button
+btn = Button(lol, width = 5,text = "result",command = DataOfTuesday).grid(row = 11, column = 3)
+
+#SubjectsForWensday
+
+#label
+
+li9 = Label(lol, text='СompScience',font = ('arial'), bd = 10).grid(row=13)
+
+li10 = Label(lol, text='Physics',font = ('arial'), bd = 10).grid(row=14)
+
+li11 = Label(lol, text='Geometry',font = ('arial'), bd = 10).grid(row=15)
+
+li12 = Label(lol, text='CompGraphics',font = ('arial'), bd = 10).grid(row=16)
+#Entry
+e9 = Entry(lol,textvariable = input9_text).grid(row = 13, column = 1)
+
+e10 = Entry(lol,textvariable = input10_text).grid(row = 14, column = 1)
+
+e11 = Entry(lol,textvariable = input11_text).grid(row = 15, column = 1)
+
+e12 = Entry(lol,textvariable = input12_text).grid(row = 16, column = 1)
+
+#scores
+score9 = Entry(lol,textvariable = score9_text,width = 5,justify = "left").grid(row = 13, column = 2)
+
+score10 = Entry(lol,textvariable = score10_text,width = 5,justify = "left").grid(row = 14, column = 2)
+
+score11 = Entry(lol,textvariable = score11_text,width = 5,justify = "left").grid(row = 15, column = 2)
+
+score12 = Entry(lol,textvariable = score12_text,width = 5,justify = "left").grid(row = 16, column = 2)
+
+
+
+#Button
+btn = Button(lol, width = 5,text = "result",command = DataOfWensday).grid(row = 17, column = 3)
+
+#SubjectsForThursday
+
+#label
+
+li5 = Label(lol, text='Math',font = ('arial'), bd = 10).grid(row=7)
+
+li6 = Label(lol, text='Physics',font = ('arial'), bd = 10).grid(row=8)
+
+li7 = Label(lol, text='KyrgLang',font = ('arial'), bd = 10).grid(row=9)
+
+li8 = Label(lol, text='History',font = ('arial'), bd = 10).grid(row=10)
+#Entry
+e5 = Entry(lol,textvariable = input5_text).grid(row = 7, column = 1)
+
+e6 = Entry(lol,textvariable = input6_text).grid(row = 8, column = 1)
+
+e7 = Entry(lol,textvariable = input7_text).grid(row = 9, column = 1)
+
+e8 = Entry(lol,textvariable = input8_text).grid(row = 10, column = 1)
+
+#scores
+score5 = Entry(lol,textvariable = score5_text,width = 5,justify = "left").grid(row = 7, column = 2)
+
+score6 = Entry(lol,textvariable = score6_text,width = 5,justify = "left").grid(row = 8, column = 2)
+
+score7 = Entry(lol,textvariable = score7_text,width = 5,justify = "left").grid(row = 9, column = 2)
+
+score8 = Entry(lol,textvariable = score8_text,width = 5,justify = "left").grid(row = 10, column = 2)
+
+
+
+#Button
+btn = Button(lol, width = 5,text = "result",command = DataOfTuesday).grid(row = 11, column = 3)
+
+#SubjectsForThursday
+
+#label
+subject = Label(lol, text='Subject',font = ('arial 14'), bd = 10).grid(row=0, column = 8)
+
+tasks = Label(lol, text='Task',font = ('arial 14'), bd = 10).grid(row=0, column = 9)
+
+scores = Label(lol, text='score',font = ('arial 14'), bd = 10).grid(row=0, column = 10)
+
+li1 = Label(lol, text='Drawing',font = ('arial'), bd = 10).grid(row=1, column = 8)
+
+li2 = Label(lol, text='Physics',font = ('arial'), bd = 10).grid(row=2, column = 8)
+
+li3 = Label(lol, text='EngLang',font = ('arial'), bd = 10).grid(row=3, column = 8)
+
+li4 = Label(lol, text='Chemistry',font = ('arial'), bd = 10).grid(row=4, column = 8)
+#Entry
+el = Entry(lol,textvariable = input13_text).grid(row = 1, column = 9)
+
+e2 = Entry(lol,textvariable = input14_text).grid(row = 2, column = 9)
+
+e3 = Entry(lol,textvariable = input15_text).grid(row = 3, column = 9)
+
+e4 = Entry(lol,textvariable = input16_text).grid(row = 4, column = 9)
+
+#scores
+score1 = Entry(lol,textvariable = score13_text,width = 5,justify = "left").grid(row = 1, column = 10)
+
+score2 = Entry(lol,textvariable = score14_text,width = 5,justify = "left").grid(row = 2, column = 10)
+
+score3 = Entry(lol,textvariable = score15_text,width = 5,justify = "left").grid(row = 3, column = 10)
+
+score4 = Entry(lol,textvariable = score16_text,width = 5,justify = "left").grid(row = 4, column = 10)
+
+#Button
+btn = Button(lol, width = 5,text = "result",command = DataOfThursday).grid(row = 5, column = 16)
+
+#SubjectsForFriday
+li1 = Label(lol, text='Math',font = ('arial'), bd = 10).grid(row=6, column = 8)
+
+li2 = Label(lol, text='EngLang',font = ('arial'), bd = 10).grid(row=7, column = 8)
+
+li3 = Label(lol, text='RusLang',font = ('arial'), bd = 10).grid(row=8, column = 8)
+
+li4 = Label(lol, text='Physics',font = ('arial'), bd = 10).grid(row=9, column = 8)
+#Entry
+el = Entry(lol,textvariable = input17_text).grid(row = 6, column = 9)
+
+e2 = Entry(lol,textvariable = input18_text).grid(row = 7, column = 9)
+
+e3 = Entry(lol,textvariable = input19_text).grid(row = 8, column = 9)
+
+e4 = Entry(lol,textvariable = input20_text).grid(row = 9, column = 9)
+
+#scores
+score1 = Entry(lol,textvariable = score17_text,width = 5,justify = "left").grid(row = 6, column = 10)
+
+score2 = Entry(lol,textvariable = score18_text,width = 5,justify = "left").grid(row = 7, column = 10)
+
+score3 = Entry(lol,textvariable = score19_text,width = 5,justify = "left").grid(row = 8, column = 10)
+
+score4 = Entry(lol,textvariable = score20_text,width = 5,justify = "left").grid(row = 9, column = 10)
+
+
+
+#Button
+btn = Button(lol, width = 5,text = "result",command = DataOfFriday).grid(row = 10, column = 16)
+
+lol.mainloop()
+
